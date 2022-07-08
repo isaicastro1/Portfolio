@@ -22,8 +22,6 @@ body {
   animation-name: slideInLeft;
 }
 
-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
-
 .title-2 {
   color: blue;
   position: absolute;
@@ -38,6 +36,33 @@ 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
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   animation-name: slideInLeft;
+}
+
+.more-btn {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  margin: -10px 0 0 230px;
+}
+
+.more {
+  border-radius: 15px;
+  width: 100px;
+  height: 50px;
+  color: blue;
+  background-color: white;
+  border: 4px solid blue;
+  opacity: 0;
+  animation-name: fade-bottom;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.more:hover {
+  cursor: pointer;
+
 }
 
 h2 {
@@ -134,7 +159,7 @@ section .text-container .text-box h3 {
 
 @keyframes slideInLeft {
     from { opacity: 0; }
-    to { opacity: 1; }
+      to { opacity: 1; }
   0% {
     transform: translateX(-10%);
   }
@@ -144,6 +169,8 @@ section .text-container .text-box h3 {
 }
 
 @keyframes fade-bottom {
+  from { opacity: 0; }
+    to { opacity: 1; }
   0% {
     transform: translateY(50px);
     opacity: 0;
