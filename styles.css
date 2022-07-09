@@ -4,10 +4,10 @@
 }
 
 html {
+  overscroll-behavior-y: none;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow: auto;
   height: 550vh;
-  overflow-y:scroll;
 }
 
 * {
