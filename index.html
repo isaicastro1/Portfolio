@@ -14,62 +14,90 @@
 
   </head>
 <body>
+    <!-- First Page -->
     <section>
       <div class="first-page">
         <h1 class="title">Hi, my name is <span class="title-name" >Isai Castro</span></h1>
         <h1 class="title-2">I am a Web Developer</h1>
-        <a href="#second"><button class='btn-more'> <span>More</span></button></a>
+        <a href="#about"><button class='btn-more'> <span>More</span></button></a>
       </div>
       </section>
-      <section id="second">
-        <div class="container reveal fade-bottom">
-          <h2>Caption</h2>
+      <!-- About me -->
+      <section id="about">
+        <div class="container reveal fade-bottom about-section">
+          <h2 class="about-title">About me</h2>
           <div class="text-container">
-            <div class="text-box">
-              <h3>Section Text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                eius molestiae perferendis eos provident vitae iste.
-              </p>
+            <div class="image-box">
+              <img class="prof-pic" src="assets/prof-pic.jpg" alt="">
             </div>
             <div class="text-box">
-              <h3>Section Text</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                eius molestiae perferendis eos provident vitae iste.
+                Hello! I am a 22 year old who loves computers and gained 
+                a passion for software development. I attended a bootcamp 
+                which taught me how to triumph in Front End and Back End 
+                Web Development. 
+              </p>
+              <p>
+                My goal is to keep learning and gaining more skills in 
+                order to contribute as much as I can to the World of Web Development.
               </p>
             </div>
-            <div class="text-box">
-              <h3>Section Text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                eius molestiae perferendis eos provident vitae iste.
-              </p>
-            </div>
+          </div>
+          <div class="resume">
+            <a 
+              target=”_blank”
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1ElN78wVI4D9nd2ntF4S_sd6tHdT_o0l5/view?ths=true">
+              <button class="resume-btn">View Resume</button>
+            </a>
           </div>
         </div>
       </section>
       
-      <section>
+      <section id="projects">
         <div class="container reveal fade-left">
-          <h2>Caption</h2>
-          <div class="text-container">
-            <div class="text-box">
-              <h3>Section Text</h3>
+          <h2 class="projects-title">Projects</h2>
+          <div class="text-container projects-container">
+            <div class="project-1">
+              <div class="text-box project1-desc">
+                <h3 class="project-title">Face-Recognition</h3>
+                <p>
+                  This project allows users to share images which 
+                  will be sent to an image recognition API that will return
+                  coordinates where it detects a face. Using these coordinates
+                  a border will be inserted sorrounding the face. It also includes 
+                  a RESTful API with the ability to sign in/register and authenticate users.
+                </p>
+                <a 
+                  target=”_blank”
+                  rel="noopener noreferrer"
+                  href="https://isaicastro1.github.io/Face-Recognition/">
+                  <button class="see-live">
+                    See Live
+                  </button>
+                </a>
+                <a 
+                  target=”_blank”
+                  rel="noopener noreferrer"
+                  href="https://github.com/isaicastro1/Face-Recognition">
+                  <button class="source-code">
+                    Source Code
+                  </button>
+                </a>
+              </div>
+              <div class="project1-img">
+                <img class="proj-img" src="assets/Face Recognition-logo.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text-box project2">
+              <h3 class="project-title-2">project 2</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
                 eius molestiae perferendis eos provident vitae iste.
               </p>
             </div>
-            <div class="text-box">
-              <h3>Section Text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                eius molestiae perferendis eos provident vitae iste.
-              </p>
-            </div>
-            <div class="text-box">
-              <h3>Section Text</h3>
+            <div class="text-box project3">
+              <h3 class="project-title-3">project 3</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
                 eius molestiae perferendis eos provident vitae iste.
@@ -79,7 +107,7 @@
         </div>
       </section>
       
-      <section>
+      <section id="contact">
         <div class="container reveal fade-right">
           <h2>Caption</h2>
           <div class="text-container">
