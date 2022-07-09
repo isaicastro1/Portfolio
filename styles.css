@@ -20,7 +20,14 @@ body {
 }
 
 .title-name {
-
+  font-size: 4rem;
+  background: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #FFCC70 0%, #BF4E8C 66%, #7431ae 100%);  
 }
 
 .title {
