@@ -6,6 +6,8 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  height: 550vh;
+  overflow-y:scroll;
 }
 
 * {
@@ -17,6 +19,7 @@ html {
 }
 
 body {
+  height: auto;
   background-color: #0093E9;
   background-image: linear-gradient(207deg, #0093E9 0%, #c668cc 35%);
 }
@@ -194,9 +197,9 @@ section .text-container .text-box h3 {
   align-items: center;
 }
 
-#about {
+/* #about {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-}
+} */
 
 h2 {
   color: rgb(26, 67, 124);
@@ -278,10 +281,14 @@ h2 {
   height: 100vh;
 }
 
+b {
+  padding-left: 20px;
+}
+
 .projects-title {
   position: absolute;
   left: 40%;
-  top: -400px;
+  top: -300px;
   color: white;
 }
 
@@ -291,6 +298,7 @@ h2 {
   width: 80vw;
 }
 
+/* Project 1 */
 .project-1 {
   display: flex;
 }
@@ -304,13 +312,13 @@ h2 {
 }
 
 .see-live {
-  left: 8vw;
-  top: 300px;
+  left: 6vw;
+  top: 360px;
 }
 
 .source-code {
   left: 20vw;
-  top: 300px;
+  top: 360px;
 }
 
 .project1-img {
@@ -327,15 +335,55 @@ h2 {
 }
 
 /* Project 2 */
-.project2 {
+.project-2 {
   position: absolute;
-  top: 300px;
 }
 
-/* Project 3 */
-.project3 {
+.project2-desc {
   position: absolute;
-  top: 600px;
+  left: -50vw;
+  top: 300px;
+  max-width: 40vw;
+  height: 25vw;
+}
+
+.project2-img {
+  position: absolute;
+  left: 4vw;
+  top: 300px;
+  max-width: 50vw;
+  overflow: hidden;
+}
+
+.proj2-img {
+  width: 35vw;
+  height: auto;
+}
+/* Project 3 */
+.project-3 {
+  position: absolute;
+}
+
+.project3-desc {
+  position: absolute;
+  left: -50vw;
+  top: 800px;
+  max-width: 40vw;
+  /* height: 55vw; */
+}
+
+.project3-img {
+  position: absolute;
+  left: 4vw;
+  top: 800px;
+  max-width: 50vw;
+  overflow: hidden;
+}
+
+.proj3-img {
+  width: 35vw;
+  height: auto;
+  object-fit: fill;
 }
 
 /* Contact */
