@@ -3,6 +3,8 @@ window.onbeforeunload = function () {
   window.scrollTo(0,0);
 };
 
+window.addEventListener("scroll", reveal);
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
   
@@ -18,5 +20,3 @@ function reveal() {
       }
     }
   }
-  
-  window.addEventListener("scroll", reveal);

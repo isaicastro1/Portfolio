@@ -1,3 +1,8 @@
+:root {
+  --primary: #0093E9;
+  --white: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +11,18 @@
 }
 
 body {
-  background: white;
+  background-color: #0093E9;
+  background-image: linear-gradient(207deg, #0093E9 0%, #c668cc 40%);
+}
+
+.title-name {
+
 }
 
 .title {
-  color: blue;
+  color: white;
   margin: 0;
-  background: white;
+  background: transparent;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
@@ -20,11 +30,11 @@ body {
 }
 
 .title-2 {
-  color: blue;
+  color: white;
   opacity: 0;
   height: 70px;
   margin: 10px 0 10px 0;
-  background: white;
+  background: transparent;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-delay: 0.5s;
@@ -36,27 +46,57 @@ body {
   display: block;
   position: absolute;
   left: 200px;
+  height: 300px;
 }
 
-.more {
+.btn-more {
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
   border-radius: 15px;
   width: 100px;
   height: 50px;
-  color: blue;
-  background-color: white;
-  border: 4px solid blue;
+  font-size: 1em;
   opacity: 0;
+  color: rgb(30, 23, 155);
   margin: 15px 0 0 0;
+  border: none;
+  box-shadow: rgba(14, 72, 144, 0.35) 0px 1px 2px;
+  transition: all 150ms ease-in-out;
   animation-name: fade-bottom;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   animation-delay: 1.5s;
+  transition: 0.2s;
 }
 
-.more:hover {
+.btn-more:hover {
+  transform: scale(1.1);
   cursor: pointer;
+  box-shadow: 1px 1px 25px 10px rgba(44, 47, 199, 0.4);
+}
 
+.btn-more:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btn-more:hover:before {
+  left: 100%;
 }
 
 h2 {
