@@ -7,7 +7,7 @@ html {
   overscroll-behavior-y: none;
   scroll-behavior: smooth;
   overflow: auto;
-  height: 550vh;
+  height: 490vh;
 }
 
 * {
@@ -197,10 +197,6 @@ section .text-container .text-box h3 {
   align-items: center;
 }
 
-/* #about {
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-} */
-
 h2 {
   color: rgb(26, 67, 124);
 }
@@ -213,7 +209,8 @@ h2 {
 
 .resume-btn,
 .see-live,
-.source-code
+.source-code,
+.contact-btn
  {
   text-transform: uppercase;
   text-decoration: none;
@@ -244,7 +241,8 @@ h2 {
 
 .resume-btn:hover, 
 .see-live:hover,
-.source-code:hover
+.source-code:hover,
+.contact-btn:hover
 {
   cursor: pointer;
   box-shadow: 1px 1px 20px 10px rgba(44, 47, 199, 0.4);
@@ -252,7 +250,8 @@ h2 {
 
 .resume-btn:before,
 .see-live:before,
-.source-code:before 
+.source-code:before,
+.contact-btn:before 
  {
   content: "";
   position: absolute;
@@ -271,7 +270,8 @@ h2 {
 
 .resume-btn:hover:before, 
 .see-live:hover:before,
-.source-code:hover:before 
+.source-code:hover:before,
+.contact-btn:hover:before
   {
     left: 100%;
   }
@@ -359,6 +359,7 @@ b {
   width: 35vw;
   height: auto;
 }
+
 /* Project 3 */
 .project-3 {
   position: absolute;
@@ -369,7 +370,6 @@ b {
   left: -50vw;
   top: 800px;
   max-width: 40vw;
-  /* height: 55vw; */
 }
 
 .project3-img {
@@ -388,7 +388,30 @@ b {
 
 /* Contact */
 #contact {
-  background-color: #c668cc;
+  position: absolute;
+  top: 3500px;
+  background-color: #e0ffff;
+  min-height: 100px;
+  height: 800px;
+  width: 100%;
+}
+
+.contact-title {
+position: absolute;
+left: 30%;
+top: -190px
+}
+
+.contact-p {
+  height: 100px;
+  font-size:xx-large;
+  color: white;
+  margin-top: -80px;
+}
+
+.contact-btn {
+  left: 33%;
+  top: 60px;
 }
 
 @media (max-width: 680px) {
