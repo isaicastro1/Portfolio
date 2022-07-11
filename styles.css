@@ -405,13 +405,23 @@ top: -190px
 .contact-p {
   height: 100px;
   font-size:xx-large;
-  color: white;
+  color: black;
   margin-top: -80px;
 }
 
 .contact-btn {
   left: 33%;
   top: 60px;
+}
+
+.social-links {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  left: 38%;
+  top: 600px;
+  gap: 20px;
 }
 
 @media (max-width: 680px) {
