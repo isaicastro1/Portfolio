@@ -7,7 +7,7 @@ html {
   overscroll-behavior-y: none;
   scroll-behavior: smooth;
   overflow: auto;
-  height: 490vh;
+  height: 470vh;
 }
 
 * {
@@ -210,6 +210,10 @@ h2 {
 .resume-btn,
 .see-live,
 .source-code,
+.proj2-src,
+.proj2-live,
+.proj3-live,
+.proj3-src,
 .contact-btn
  {
   text-transform: uppercase;
@@ -242,6 +246,10 @@ h2 {
 .resume-btn:hover, 
 .see-live:hover,
 .source-code:hover,
+.proj2-src:hover,
+.proj2-live:hover,
+.proj3-live:hover,
+.proj3-src:hover,
 .contact-btn:hover
 {
   cursor: pointer;
@@ -251,6 +259,10 @@ h2 {
 .resume-btn:before,
 .see-live:before,
 .source-code:before,
+.proj2-src:before,
+.proj2-live:before,
+.proj3-live:before,
+.proj3-src:before,
 .contact-btn:before 
  {
   content: "";
@@ -271,6 +283,10 @@ h2 {
 .resume-btn:hover:before, 
 .see-live:hover:before,
 .source-code:hover:before,
+.proj2-src:hover:before,
+.proj2-live:hover:before,
+.proj3-live:hover:before,
+.proj3-src:hover:before,
 .contact-btn:hover:before
   {
     left: 100%;
@@ -313,12 +329,12 @@ b {
 
 .see-live {
   left: 6vw;
-  top: 360px;
+  top: 390px;
 }
 
 .source-code {
   left: 20vw;
-  top: 360px;
+  top: 390px;
 }
 
 .project1-img {
@@ -360,6 +376,16 @@ b {
   height: auto;
 }
 
+.proj2-live {
+  left: 6vw;
+  top: 340px;
+}
+
+.proj2-src {
+  left: 20vw;
+  top: 340px;
+}
+
 /* Project 3 */
 .project-3 {
   position: absolute;
@@ -386,10 +412,20 @@ b {
   object-fit: fill;
 }
 
+.proj3-live {
+  left: 6vw;
+  top: 340px;
+}
+
+.proj3-src {
+  left: 20vw;
+  top: 340px;
+}
+
 /* Contact */
 #contact {
   position: absolute;
-  top: 3500px;
+  top: 3700px;
   background-color: #e0ffff;
   min-height: 100px;
   height: 800px;
