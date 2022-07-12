@@ -6,7 +6,7 @@
 html {
   overscroll-behavior-y: none;
   scroll-behavior: smooth;
-  overflow: auto;
+  overflow-x: hidden;
   height: 470vh;
 }
 
@@ -51,16 +51,16 @@ section:nth-child(4) {
 }
 
 section .container {
-  margin: 100px;
+  min-height: 100vh;
 }
 
 section h1 {
   font-size: 3rem;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 section h2 {
-  position: relative;
+  /* position: relative; */
   top: 0;
   font-size: 40px;
   text-align: center;
@@ -69,10 +69,11 @@ section h2 {
 
 section .text-container {
   display: flex;
+  min-height: 60vh;
 }
 
 section .text-container .text-box {
-  width: 50vw;
+  /* width: 50vw; */
   align-items: center;
   font-size: 1.5rem;
   padding: 20px;
@@ -80,9 +81,11 @@ section .text-container .text-box {
 }
 
 section .text-container .text-box p {
-  height: max-content;
+  height: auto;
   vertical-align: middle;
-  margin: 20px;
+  min-width: 40vw;
+  /* max-height: 200px; */
+  /* margin: 20px; */
 }
 
 section .text-container .text-box h3 {
@@ -128,10 +131,10 @@ section .text-container .text-box h3 {
 }
 
 .first-page {
-  display: block;
-  position: absolute;
-  left: 15vw;
-  height: 300px;
+  /* display: block; */
+  /* position: absolute; */
+  /* left: 15vw; */
+  /* height: 300px; */
 }
 
 .btn-more {
@@ -167,7 +170,7 @@ section .text-container .text-box h3 {
 
 .btn-more:before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: -100%;
   width: 100%;
@@ -186,15 +189,28 @@ section .text-container .text-box h3 {
 }
 
 /* About me page */
+#about {
+  max-height: max-content;
+}
+
 .about-title {
-  position: absolute;
+  /* position: relative; */
   text-align: center;
   width: 100%;
-  top: -100px;
+  /* top: -100px; */
 }
 
 .text-container {
   align-items: center;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-btn {
+  margin-top: 10px;
 }
 
 h2 {
@@ -219,7 +235,7 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   border: 5px solid rgb(146, 148, 248);
-  position: absolute;
+  /* position: absolute; */
   left: 40%;
   top: 100%;
   overflow: hidden;
@@ -266,7 +282,7 @@ h2 {
 .contact-btn:before 
  {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: -100%;
   width: 100%;
@@ -287,14 +303,23 @@ h2 {
 .proj2-live:hover:before,
 .proj3-live:hover:before,
 .proj3-src:hover:before,
-.contact-btn:hover:before
-  {
+.contact-btn:hover:before {
     left: 100%;
   }
 
+/* .projects-container {
+  display: flex;
+  min-height: 800px;
+} */
+
 /* Projects */
 #projects {
+  display: flex;
   height: 100vh;
+}
+
+.project-title {
+  font-size: 1.5rem;
 }
 
 b {
@@ -302,61 +327,98 @@ b {
 }
 
 .projects-title {
-  position: absolute;
-  left: 40%;
-  top: -300px;
+  margin-top: 20px;
   color: white;
 }
 
 .projects-container {
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  position: absolute;
+  width: 100vw;
+  height: 600px;
 }
 
 /* Project 1 */
 .project-1 {
   display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 22vh;
+  max-width: 1300px;
+  /* position: relative; */
+  /* height: 700px; */
+  width: 80vw;
+  border: 3px solid red;
+  /* top: 180px; */
 }
 
 .project1-desc {
-  position: absolute;
-  left: -10vw;
-  top: -200px;
-  max-width: 40vw;
-  height: 25vw;
+  /* position: absolute; */
+  /* left: -10vw;
+  top: -200px; */
+  max-width: 500px;
+  /* position: static; */
+  width: 40vw;
+  /* height: 25vw; */
+}
+
+.project-p {
+  font-size: 1.5vw;
 }
 
 .see-live {
-  left: 6vw;
-  top: 390px;
+  max-width: 150px;
+  max-height: 50px;
+  height: 5vh;
+  width: 10vw;
+  margin-top: 5px;
+  /* left: 6vw;
+  top: 390px; */
 }
 
 .source-code {
-  left: 20vw;
-  top: 390px;
+  max-width: 150px;
+  max-height: 50px;
+  height: 5vh;
+  width: 10vw;
+  margin-top: 5px;
+  margin-left: 10px;
+  /* left: 20vw;
+  top: 390px; */
 }
 
 .project1-img {
-  position: absolute;
+  align-self: center;
+  /* position: absolute; */
   left: 50vw;
-  top: -200px;
-  max-width: 50vw;
+  /* top: -200px; */
+  /* max-width: 50vw; */
   overflow: hidden;
 }
 
 .proj-img {
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 150px;
+  min-height: 150px;
   width: 25vw;
   height: auto;
 }
 
+h3 p {
+  font-size: xx-large;
+}
+
 /* Project 2 */
 .project-2 {
-  position: absolute;
+  /* position: absolute; */
 }
 
 .project2-desc {
-  position: absolute;
+  /* position: absolute; */
   left: -50vw;
   top: 300px;
   max-width: 40vw;
@@ -364,7 +426,7 @@ b {
 }
 
 .project2-img {
-  position: absolute;
+  /* position: absolute; */
   left: 4vw;
   top: 300px;
   max-width: 50vw;
@@ -388,18 +450,18 @@ b {
 
 /* Project 3 */
 .project-3 {
-  position: absolute;
+  /* position: absolute; */
 }
 
 .project3-desc {
-  position: absolute;
+  /* position: absolute; */
   left: -50vw;
   top: 800px;
   max-width: 40vw;
 }
 
 .project3-img {
-  position: absolute;
+  /* position: absolute; */
   left: 4vw;
   top: 800px;
   max-width: 50vw;
@@ -424,7 +486,7 @@ b {
 
 /* Contact */
 #contact {
-  position: absolute;
+  /* position: absolute; */
   top: 3700px;
   background-color: #e0ffff;
   min-height: 100px;
@@ -433,7 +495,7 @@ b {
 }
 
 .contact-title {
-position: absolute;
+/* position: absolute; */
 left: 30%;
 top: -190px
 }
@@ -451,7 +513,7 @@ top: -190px
 }
 
 .social-links {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   justify-content: space-evenly;
   width: 300px;
@@ -466,22 +528,35 @@ top: -190px
   }
 }
 
+@media (max-width: 720px) {
+  .see-live,
+  .source-code {
+    width: 5.5rem;
+  }
+}
+
 @media (max-width: 895px) {
   section .text-container .text-box {
     margin: 0;
-    width: 80vw;
+    width: 50vw;
   }
 
   .about-title {
-    top: -200px;
+    height: 100px;
+    margin-top: 20px;
   }
 
   #about {
-    height: 180vh;
+    min-height: 100vh;
+  }
+
+  .prof-pic {
+    height: auto;
+    width: 150px;
   }
 
   .btn-more {
-    position: absolute;
+    /* position: absolute; */
     left: 40%;
   }
 
@@ -498,10 +573,45 @@ top: -190px
   section .text-container {
     flex-direction: column;
   }
+
+  section {
+    max-height: 100vh;
+  }
+
+  .about-section {
+    width: 100vw;
+  }
+
+  .project-p {
+    font-size: 1.1rem;
+  }
+
+  /* .proj-img,
+  .proj2-img,
+  .proj3-img {
+    display: none;
+  } */
+
+  section #projects {
+    min-height: 100vh;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .about-title {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .project-p {
+    font-size: 1.5rem;
+  }
 }
 
 .reveal {
-  position: relative;
+  /* position: relative; */
   opacity: 0;
 }
 
