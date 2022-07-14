@@ -78,6 +78,7 @@ section .text-container .text-box {
   font-size: 1.5rem;
   padding: 20px;
   margin-left: 100px;
+  max-width: 900px;
 }
 
 section .text-container .text-box p {
@@ -348,10 +349,11 @@ b {
   transform: translateX(-50%);
   top: 22vh;
   max-width: 1300px;
+  margin-top: 30px;
   /* position: relative; */
   /* height: 700px; */
   width: 80vw;
-  border: 3px solid red;
+  /* border: 3px solid red; */
   /* top: 180px; */
 }
 
@@ -374,7 +376,7 @@ b {
   max-height: 50px;
   height: 5vh;
   width: 10vw;
-  margin-top: 5px;
+  margin-top: 25px;
   /* left: 6vw;
   top: 390px; */
 }
@@ -384,7 +386,7 @@ b {
   max-height: 50px;
   height: 5vh;
   width: 10vw;
-  margin-top: 5px;
+  margin-top: 25px;
   margin-left: 10px;
   /* left: 20vw;
   top: 390px; */
@@ -601,6 +603,13 @@ top: -190px
 @media (min-width: 900px) {
   .about-title {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 1277px) {
+  .see-live,
+  .source-code {
+    margin-top: 20px;
   }
 }
 
