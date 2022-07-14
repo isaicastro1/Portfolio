@@ -417,14 +417,24 @@ h3 p {
 /* Project 2 */
 .project-2 {
   /* position: absolute; */
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 75vh;
+  max-width: 1300px;
+  /* margin-top: 30px; */
+  /* position: relative; */
+  /* height: 700px; */
+  width: 80vw;
 }
 
 .project2-desc {
   /* position: absolute; */
-  left: -50vw;
-  top: 300px;
-  max-width: 40vw;
-  height: 25vw;
+  max-width: 500px;
+  /* position: static; */
+  width: 40vw;
 }
 
 .project2-img {
@@ -432,22 +442,36 @@ h3 p {
   left: 4vw;
   top: 300px;
   max-width: 50vw;
+  align-self: center;
   overflow: hidden;
 }
 
 .proj2-img {
   width: 35vw;
+  min-width: 180px;
   height: auto;
+  max-height: 300px;
 }
 
 .proj2-live {
-  left: 6vw;
-  top: 340px;
+  /* left: 6vw;
+  top: 340px; */
+  max-width: 150px;
+  max-height: 50px;
+  height: 5vh;
+  width: 10vw;
+  margin-top: 25px;
 }
 
 .proj2-src {
-  left: 20vw;
-  top: 340px;
+  /* left: 20vw;
+  top: 340px; */
+  max-width: 150px;
+  max-height: 50px;
+  height: 5vh;
+  width: 10vw;
+  margin-top: 25px;
+  margin-left: 10px;
 }
 
 /* Project 3 */
@@ -525,14 +549,19 @@ top: -190px
 }
 
 @media (max-width: 680px) {
-  .first-page {
-    
+  .project-2 {
+    top: 80vh;
   }
 }
 
 @media (max-width: 720px) {
   .see-live,
-  .source-code {
+  .source-code,
+  .proj2-live,
+  .proj2-src,
+  .proj3-live,
+  .proj3-live
+   {
     width: 5.5rem;
   }
 }
@@ -603,6 +632,10 @@ top: -190px
 @media (min-width: 900px) {
   .about-title {
     margin-top: 40px;
+  }
+  
+  .project-p {
+    font-size: 1.2rem;
   }
 }
 
