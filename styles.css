@@ -423,6 +423,7 @@ h3 p {
   left: 50%;
   transform: translateX(-50%);
   top: 75vh;
+  margin-top: 60px;
   max-width: 1300px;
   /* margin-top: 30px; */
   /* position: relative; */
@@ -447,10 +448,16 @@ h3 p {
 }
 
 .proj2-img {
-  width: 35vw;
+  /* width: 30vw;
   min-width: 180px;
   height: auto;
+  max-height: 300px; */
+  max-width: 300px;
   max-height: 300px;
+  min-width: 150px;
+  min-height: 150px;
+  width: 25vw;
+  height: auto;
 }
 
 .proj2-live {
@@ -477,13 +484,29 @@ h3 p {
 /* Project 3 */
 .project-3 {
   /* position: absolute; */
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 124vh;
+  margin-top: 60px;
+  max-width: 1300px;
+  /* margin-top: 30px; */
+  /* position: relative; */
+  /* height: 700px; */
+  width: 80vw;
 }
 
 .project3-desc {
   /* position: absolute; */
-  left: -50vw;
+  /* left: -50vw;
   top: 800px;
-  max-width: 40vw;
+  max-width: 40vw; */
+  max-width: 500px;
+  /* position: static; */
+  width: 40vw;
+  margin-left: 40px;
 }
 
 .project3-img {
@@ -495,19 +518,40 @@ h3 p {
 }
 
 .proj3-img {
-  width: 35vw;
+  /* width: 35vw;
   height: auto;
-  object-fit: fill;
+  object-fit: fill; */
+  max-width: 650px;
+  max-height: 300px;
+  min-width: 150px;
+  min-height: 150px;
+  width: 25vw;
+  height: auto;
 }
 
 .proj3-live {
-  left: 6vw;
-  top: 340px;
+  /* left: 6vw;
+  top: 340px; */
+  max-width: 150px;
+  max-height: 50px;
+  height: 5vh;
+  width: 10vw;
+  margin-top: 25px;
 }
 
 .proj3-src {
-  left: 20vw;
-  top: 340px;
+  /* left: 20vw;
+  top: 340px; */
+  max-width: 150px;
+  max-height: 50px;
+  height: 5vh;
+  width: 10vw;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.project-p {
+  font-size: 1.5vw;
 }
 
 /* Contact */
@@ -560,7 +604,7 @@ top: -190px
   .proj2-live,
   .proj2-src,
   .proj3-live,
-  .proj3-live
+  .proj3-src
    {
     width: 5.5rem;
   }
@@ -671,6 +715,12 @@ top: -190px
 
 .active.fade-right {
   animation: fade-right 1s ease-in;
+}
+
+@media (max-width: 1630px) {
+  .project3-desc {
+    margin: 0;
+  }
 }
 
 @keyframes slideInLeft {
