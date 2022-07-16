@@ -21,7 +21,7 @@ html {
 body {
   height: auto;
   background-color: #0093E9;
-  background-image: linear-gradient(207deg, #0093E9 0%, #c668cc 35%);
+  /* background-image: linear-gradient(207deg, #0093E9 0%, #c668cc 35%); */
 }
 
 /* Sections */
@@ -335,6 +335,7 @@ b {
 .projects-container {
   display: flex;
   flex-direction: column;
+  background-color: #0093E9;
   position: absolute;
   width: 100vw;
   height: 600px;
@@ -600,9 +601,76 @@ top: -190px
   gap: 20px;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 350px) {
+  .prof-pic {
+    display: none;
+  }
+
+  html body #about .about-text {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 476px) and (max-width: 500px) {
+  .project-3 {
+    top: 160vh;
+  }
+}
+
+@media (max-width: 476px) {
+  .source-code,
+  .proj2-src,
+  .proj3-src {
+    margin: 0;
+  }
+
+  .project-1 {
+    top: 10vh;
+  }
+
   .project-2 {
-    top: 80vh;
+    top: 115vh;
+  }
+
+  .project-3 {
+    top: 175vh;
+  }
+
+  .project1-img,
+  .project2-img,
+  .project3-img {
+    display: none;
+  }
+
+}
+
+@media (max-width: 500px) {
+  #contact {
+    top: 150vh;
+  }
+}
+
+@media (max-width: 350px) {
+  #contact {
+    top: 170vh;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 200px) {
+  .project-2 {
+    top: 100vh;
+  }
+
+  #about .about-text {
+    width: 90vw;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 680px) and (min-width: 501px) {
+  .project-2 {
+    top: 70vh;
   }
 }
 
@@ -616,9 +684,14 @@ top: -190px
    {
     width: 5.5rem;
   }
+
+  .prof-pic {
+    width: 30vw;
+    height: auto;
+  }
 }
 
-@media (max-width: 895px) {
+@media (max-width: 895px) and (min-width: 500px;) {
   section .text-container .text-box {
     margin: 0;
     width: 50vw;
@@ -707,6 +780,13 @@ top: -190px
 @media (min-width: 1600px) {
   .project-p {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 901px) {
+  body #about .about-text {
+    margin: 0;
+    width: 60vw;
   }
 }
 
